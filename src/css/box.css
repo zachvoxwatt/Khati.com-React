@@ -7,6 +7,7 @@ textarea
     margin-right: auto;
     resize: none;
     outline: none;
+    border: none;
     padding: 1%;
     border-width: 0%;
     border-radius: 8px;
@@ -33,21 +34,39 @@ textarea
 
 #inputbox
 {
+    padding: 1%;
     font-size: 100%;
+    height: 43px;
     font-family: sans-serif;
     text-align: center;
-    overflow-y: hidden;
+    margin: auto
 }
 
 #inputbox::placeholder
 {
     font-style: italic;
     font-size: 90%;
+    line-height: 43px;
 }
 
-#status
+#inputbox::-webkit-input-placeholder
 {
-    color: white;
-    margin: 0 auto;
-    text-align: center;
+    line-height: 43px;
+}
+
+#inputbox::-moz-placeholder
+{
+    /* Firefox 18- */
+    line-height: 43px;
+}
+
+#inputbox::-moz-placeholder
+{
+    /* Firefox 19+ */
+    line-height: 43px;
+}
+
+#inputbox::-ms-input-placeholder
+{
+    line-height: 43px;
 }

@@ -1,0 +1,31 @@
+.buttons-box
+{
+    text-align: center;   
+}
+
+button
+{
+    border-radius: 8px;
+    border-width: 0%;
+    height: 7.5vh;
+    width: 25.75%;
+    margin-top: 0.5%;
+    margin-left: 0.25%;
+    margin-right: 0.25%;
+    font-size: 110%;
+    transition-duration: 500ms;
+    color: darkslategray;
+    font-family: sans-serif;
+    outline: none;
+    border: none
+}
+
+button:active { color: white; transition-duration: 200ms;}
+
+#generateButton:hover { background-color: lime; }
+#generateButton:active { background-color: green; }
+
+#clipboardButton:hover { background-color: cyan; }
+#clipboardButton:active { background-color: blue; }
+
+button:focus { outline: none }
