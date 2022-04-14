@@ -9,4 +9,16 @@ import './css/index.css';
 const rootcontainer = document.getElementById('root')
 const root = createRoot(rootcontainer)
 
-root.render(<React.StrictMode><Title /><DisplayBox /><InputBox /><Buttons /></React.StrictMode>)
+const emojisData = {
+    defaultPreset: ['💓', '❤', '🤗', '❣', '😚', '💝', '💟', '😉', '💞', '🧡', '☺', '💖', '💛', '😍', '😗', '😙', '💗', '💌', '💘', '🥰', '😊', '😘', '💕', '💙', '❤️‍🔥'],
+    customPreset: []
+}
+
+root.render(
+    <React.StrictMode>
+        <Title />
+        <DisplayBox data={emojisData}/>
+        <InputBox data={emojisData}/>
+        <Buttons data={emojisData}/>
+    </React.StrictMode>
+)

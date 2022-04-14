@@ -11,12 +11,11 @@ class InputBox extends React.Component
             normalnote : 'Put some emojis here to customize the output. If no value presents, default preset is used.', 
             warningnote: "Note: Only emojis are allowed. Alphabetical letters, numeric digits or special characters are not supported."
         }
-
-        this.customEmojis = {value : []}
     }
 
     displayNotice(event, boolean)
     {
+        
         if (boolean) event.target.placeholder = this.inistate.warningnote
         else event.target.placeholder = this.inistate.normalnote
     }
@@ -33,7 +32,9 @@ class InputBox extends React.Component
             if (indexChar !== "") outputArray.push(indexChar)
         }
 
-        this.customEmojis.value = outputArray
+        this.props.data.customPreset = outputArray
+
+        console.log(this.props.data.customPreset)
     }
 
     render()
