@@ -6,18 +6,19 @@ import InputBox from './scripts/InputBox'
 import Buttons from './scripts/Buttons'
 import './css/index.css';
 
-const rootcontainer = document.getElementById('root')
-const root = createRoot(rootcontainer)
-
 const emojisData = {
     defaultPreset: ['💓', '❤', '🤗', '❣', '😚', '💝', '💟', '😉', '💞', '🧡', '☺', '💖', '💛', '😍', '😗', '😙', '💗', '💌', '💘', '🥰', '😊', '😘', '💕', '💙', '❤️‍🔥'],
-    customPreset: []
+    customPreset: [],
+    currentState: ''
 }
+
+const rootcontainer = document.getElementById('root')
+const root = createRoot(rootcontainer)
 
 root.render(
     <React.StrictMode>
         <Title />
-        <DisplayBox data={emojisData}/>
+        <DisplayBox data={emojisData} />
         <InputBox data={emojisData}/>
         <Buttons data={emojisData}/>
     </React.StrictMode>

@@ -33,8 +33,6 @@ class InputBox extends React.Component
         }
 
         this.props.data.customPreset = outputArray
-
-        console.log(this.props.data.customPreset)
     }
 
     render()

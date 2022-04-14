@@ -32,6 +32,8 @@ textarea
     user-select: none;
 }
 
+#displaybox::placeholder { font-style: italic }
+
 #inputbox
 {
     padding: 1%;
