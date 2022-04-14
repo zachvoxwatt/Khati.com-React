@@ -19,14 +19,14 @@ textarea
 #displaybox
 {
     font-family: sans-serif;
-    font-size: 125%;
+    font-size: 120%;
 }
 
 #displaybox::selection
 {
-    -ms-user-select:none;
-    -moz-user-select:none;
-    -webkit-user-select:none;
+    -ms-user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
     -webkit-touch-callout: none;
     -khtml-user-select: none;
     user-select: none;
@@ -51,24 +51,14 @@ textarea
     line-height: 43px;
 }
 
-#inputbox::-webkit-input-placeholder
-{
-    line-height: 43px;
-}
+/*Apple's WebKit*/
+#inputbox::-webkit-input-placeholder { line-height: 43px; }
 
-#inputbox::-moz-placeholder
-{
-    /* Firefox 18- */
-    line-height: 43px;
-}
+/* Firefox 18- */
+#inputbox::-moz-placeholder { line-height: 43px; }
 
-#inputbox::-moz-placeholder
-{
-    /* Firefox 19+ */
-    line-height: 43px;
-}
+/* Firefox 19+ */
+#inputbox::-moz-placeholder { line-height: 43px; }
 
-#inputbox::-ms-input-placeholder
-{
-    line-height: 43px;
-}
+/*Microsoft Edge*/
+#inputbox::-ms-input-placeholder { line-height: 43px; }

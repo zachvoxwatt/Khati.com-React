@@ -18,7 +18,7 @@ const root = createRoot(rootcontainer)
 root.render(
     <React.StrictMode>
         <Title />
-        <DisplayBox data={emojisData} />
+        <DisplayBox />
         <InputBox data={emojisData}/>
         <Buttons data={emojisData}/>
     </React.StrictMode>

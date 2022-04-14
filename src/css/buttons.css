@@ -7,7 +7,7 @@ button
 {
     border-radius: 8px;
     border-width: 0%;
-    height: 7.5vh;
+    height: 5.5vh;
     width: 25.75%;
     margin-top: 0.5%;
     margin-left: 0.25%;
@@ -26,6 +26,6 @@ button:active { color: white; transition-duration: 200ms;}
 #generateButton:active { background-color: green; }
 
 #clipboardButton:hover { background-color: cyan; }
-#clipboardButton:active { background-color: blue; }
+#clipboardButton:active { background-color: #15317E; }
 
 button:focus { outline: none }
